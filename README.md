@@ -5,6 +5,23 @@
 Every project below implements its core algorithms by hand, ships with tests and green CI,
 and says plainly in its README what has been verified on real hardware and what is still simulated.
 
+<p>
+<img alt="C" src="https://img.shields.io/badge/C-bare--metal%20%26%20kernels-555555?style=flat-square&logo=c&logoColor=white">
+<img alt="Python" src="https://img.shields.io/badge/Python-robotics%20%26%20systems-3572A5?style=flat-square&logo=python&logoColor=white">
+<img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-WebGPU-3178C6?style=flat-square&logo=typescript&logoColor=white">
+<img alt="WGSL" src="https://img.shields.io/badge/WGSL-compute%20shaders-005A9C?style=flat-square&logo=webgpu&logoColor=white">
+<img alt="Metal" src="https://img.shields.io/badge/Metal-GPU%20kernels-8F14E9?style=flat-square&logo=apple&logoColor=white">
+<img alt="AArch64" src="https://img.shields.io/badge/AArch64-assembly-6E4C13?style=flat-square&logo=arm&logoColor=white">
+<img alt="STM32" src="https://img.shields.io/badge/STM32-firmware-03234B?style=flat-square&logo=stmicroelectronics&logoColor=white">
+<img alt="ESP32" src="https://img.shields.io/badge/ESP32-ESP--IDF-E7352C?style=flat-square&logo=espressif&logoColor=white">
+<img alt="MuJoCo" src="https://img.shields.io/badge/MuJoCo-PPO-FBBF24?style=flat-square">
+</p>
+
+<p>
+<img src="assets/stats.svg" alt="GitHub activity" width="49%">
+<img src="assets/languages.svg" alt="Languages by code size" width="49%">
+</p>
+
 </div>
 
 ---
@@ -80,4 +97,12 @@ and says plainly in its README what has been verified on real hardware and what 
 
 <div align="center">
 <sub>Each repo has a Status table: ✅ tested · 🧪 simulated · ⏳ awaiting hardware. Hardware demos and benchmarks are added as they're recorded.</sub>
+</div>
+
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/coopersimpson101-debug/coopersimpson101-debug/output/snake-dark.svg">
+  <img alt="Contribution graph being eaten by a snake" src="https://raw.githubusercontent.com/coopersimpson101-debug/coopersimpson101-debug/output/snake-light.svg">
+</picture>
+<br><sub>Stat cards and snake regenerate daily via <a href=".github/workflows/profile.yml">GitHub Actions</a>, using only public data.</sub>
 </div>
