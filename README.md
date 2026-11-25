@@ -1,6 +1,6 @@
 <div align="center">
 
-### Physics student building the whole stack from scratch: silicon-level kernels, flight control, robots, GPUs, distributed systems.
+### Engineering student building the whole stack from scratch: silicon-level kernels, flight control, robots, GPUs, distributed systems.
 
 Every project below implements its core algorithms by hand, ships with tests and green CI,
 and says plainly in its README what has been verified on real hardware and what is still simulated.
