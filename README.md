@@ -14,6 +14,10 @@ and says plainly in its README what has been verified on real hardware and what 
 <img alt="AArch64" src="https://img.shields.io/badge/AArch64-assembly-6E4C13?style=flat-square&logo=arm&logoColor=white">
 <img alt="STM32" src="https://img.shields.io/badge/STM32-firmware-03234B?style=flat-square&logo=stmicroelectronics&logoColor=white">
 <img alt="ESP32" src="https://img.shields.io/badge/ESP32-ESP--IDF-E7352C?style=flat-square&logo=espressif&logoColor=white">
+<img alt="RISC-V" src="https://img.shields.io/badge/RISC--V-Amaranth%20HDL-283272?style=flat-square&logo=riscv&logoColor=white">
+<img alt="Lean" src="https://img.shields.io/badge/Lean%204-proofs-1E3A8A?style=flat-square">
+<img alt="TLA+" src="https://img.shields.io/badge/TLA%2B-model%20checking-4B5563?style=flat-square">
+<img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-training-EE4C2C?style=flat-square&logo=pytorch&logoColor=white">
 <img alt="MuJoCo" src="https://img.shields.io/badge/MuJoCo-PPO-FBBF24?style=flat-square">
 </p>
 
@@ -43,6 +47,21 @@ and says plainly in its README what has been verified on real hardware and what 
 </tr>
 </table>
 
+### 🥽 3D vision & XR
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/coopersimpson101-debug/splatscan"><img src="assets/splatscan.png" alt="splatscan"></a>
+<b><a href="https://github.com/coopersimpson101-debug/splatscan">splatscan</a></b>: live 3D scanner. insight-vio poses feed an online Gaussian-splatting optimiser with a hand-written differentiable rasteriser, streamed to splatweb as it grows.
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/coopersimpson101-debug/gazefov"><img src="assets/gazefov.png" alt="gazefov"></a>
+<b><a href="https://github.com/coopersimpson101-debug/gazefov">gazefov</a></b>: IR eye tracking for headsets (pupil/glint detection, per-user calibration, 3D-model gaze) driving foveated Gaussian-splat rendering in WebGPU.
+</td>
+</tr>
+</table>
+
 ### 🤖 Robotics & embedded
 
 <table>
@@ -66,9 +85,19 @@ and says plainly in its README what has been verified on real hardware and what 
 <b><a href="https://github.com/coopersimpson101-debug/meshfind">meshfind</a></b>: offline, end-to-end encrypted Find My network. Rotating X25519 tags, ECIES reports, ESP32 ESP-NOW mesh.
 </td>
 </tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/coopersimpson101-debug/skyrace"><img src="assets/skyrace.png" alt="skyrace"></a>
+<b><a href="https://github.com/coopersimpson101-debug/skyrace">skyrace</a></b>: autonomous FPV racing on skyforge-fc. CNN gate detection, EKF, minimum-snap + MPC; simulated laps run on the real flight-controller C code.
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/coopersimpson101-debug/sdrmesh"><img src="assets/sdrmesh.png" alt="sdrmesh"></a>
+<b><a href="https://github.com/coopersimpson101-debug/sdrmesh">sdrmesh</a></b>: BLE and LoRa physical layers written from scratch for a HackRF/PlutoSDR. Decodes meshfind adverts; BER curves checked against theory.
+</td>
+</tr>
 </table>
 
-### ⚙️ Systems
+### 🧠 ML systems
 
 <table>
 <tr>
@@ -77,8 +106,43 @@ and says plainly in its README what has been verified on real hardware and what 
 <b><a href="https://github.com/coopersimpson101-debug/tinyinfer">tinyinfer</a></b>: LLM inference engine in dependency-free C + Metal. GGUF, BPE tokenizer, KV cache, Q4_0/Q8_0, NEON/AVX2 kernels.
 </td>
 <td width="50%" valign="top">
+<a href="https://github.com/coopersimpson101-debug/tinylm"><img src="assets/tinylm.png" alt="tinylm"></a>
+<b><a href="https://github.com/coopersimpson101-debug/tinylm">tinylm</a></b>: trains a 25.7M-parameter Qwen2-style LLM from scratch (data cleaning, BPE, pretraining, eval, GGUF export) and serves it in tinyinfer with speculative decoding.
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/coopersimpson101-debug/kernelforge"><img src="assets/kernelforge.png" alt="kernelforge"></a>
+<b><a href="https://github.com/coopersimpson101-debug/kernelforge">kernelforge</a></b>: tiny ML compiler: tensor graph → fusion → tiled loop nests → WGSL, Metal and C kernels, with an autotuner. Benchmarked against hand-written kernels on an RTX 2060.
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/coopersimpson101-debug/ringtrain"><img src="assets/ringtrain.png" alt="ringtrain"></a>
+<b><a href="https://github.com/coopersimpson101-debug/ringtrain">ringtrain</a></b>: distributed training from scratch: ring all-reduce over TCP, DDP and pipeline parallelism, gradient compression, and checkpoints in raftstore that survive killed workers.
+</td>
+</tr>
+</table>
+
+### ⚙️ Systems & silicon
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/coopersimpson101-debug/orbit-rv"><img src="assets/orbit-rv.png" alt="orbit-rv"></a>
+<b><a href="https://github.com/coopersimpson101-debug/orbit-rv">orbit-rv</a></b>: pipelined RV64 CPU in Amaranth HDL with caches, Sv39 MMU and interrupts. 191/194 riscv-tests in lockstep with a golden ISS; boots orbit-os in RTL simulation.
+</td>
+<td width="50%" valign="top">
 <a href="https://github.com/coopersimpson101-debug/orbit-os"><img src="assets/orbit-os.png" alt="orbit-os"></a>
 <b><a href="https://github.com/coopersimpson101-debug/orbit-os">orbit-os</a></b>: AArch64 kernel for the Raspberry Pi 5, and the foundation for a phone and smartwatch OS. Chainloader, MMU, buddy allocator, preemptive scheduler, shell.
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/coopersimpson101-debug/orbit-watch"><img src="assets/orbit-watch.png" alt="orbit-watch"></a>
+<b><a href="https://github.com/coopersimpson101-debug/orbit-watch">orbit-watch</a></b>: smartwatch hardware and OS: nRF54L15 schematic as code, Cortex-M33 kernel with tickless idle and memory-LCD partial refresh.
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/coopersimpson101-debug/proofstack"><img src="assets/proofstack.png" alt="proofstack"></a>
+<b><a href="https://github.com/coopersimpson101-debug/proofstack">proofstack</a></b>: formal verification: a TLA+ model of raftstore's Raft checked against 260 real execution traces, and 77 Lean proofs of orbit-os's allocator and page tables.
 </td>
 </tr>
 <tr>
