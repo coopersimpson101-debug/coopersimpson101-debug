@@ -57,7 +57,8 @@ and says plainly in its README what has been verified on real hardware and what 
 </td>
 <td width="50%" valign="top">
 <a href="https://github.com/coopersimpson101-debug/gazefov"><img src="assets/gazefov.png" alt="gazefov"></a>
-<b><a href="https://github.com/coopersimpson101-debug/gazefov">gazefov</a></b>: IR eye tracking for headsets (pupil/glint detection, per-user calibration, 3D-model gaze) driving foveated Gaussian-splat rendering in WebGPU.
+<b><a href="https://github.com/coopersimpson101-debug/gazefov">gazefov</a></b>: IR eye tracking for headsets (pupil/glint detection, per-user calibration, 3D-model gaze) driving foveated Gaussian-splat rendering in WebGPU.<br>
+<a href="https://coopersimpson101-debug.github.io/gazefov/"><b>▶ Live demo</b></a>
 </td>
 </tr>
 </table>
